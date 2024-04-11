@@ -12,6 +12,7 @@ const SearchBar = ({ handleSubmit }) => {
       return;
     }
     handleSubmit(query);
+    evt.target.reset();
   };
   return (
     <header className={css['search-heder']}>

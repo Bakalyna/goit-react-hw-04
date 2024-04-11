@@ -35,15 +35,15 @@ function App() {
       setGallery([...gallery, ...data.results]);
       setShowError(!data.results.length);
       setShowLoader(false);
-      // console.log(gallery);
+      
     }
     getImages();
   }, [query, currentPage]);
 
   const visibleLoadMore = gallery.length !== 0;
 
-  function openModal() {
-    setModalImg();
+  function openModal(image) {
+    setModalImg(image);
     setModalIsOpen(true);
   }
 
