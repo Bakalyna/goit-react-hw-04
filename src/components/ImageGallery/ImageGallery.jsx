@@ -7,11 +7,7 @@ const ImageGallery = ({ gallery,openModal }) => {
           {gallery.map(item => {
           
         return (
-          <li key={item.id}
-            onClick={() => {
-              openModal(item);
-            }}
-          >
+          <li key={item.id}>
             <ImageCard item={item} openModal={openModal} />
           </li>
         );
